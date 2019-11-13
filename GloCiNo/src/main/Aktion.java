@@ -4,8 +4,19 @@ package GloCiNo;
  * Diese Klasse enthält Informationen zu einer Spendenaktion.
  */
 class Aktion {
+	/**
+	 * Der Name der Aktion
+	 */
 	private String name;
+
+	/**
+	 * Die bisher gesammelten Spenden
+	 */
 	private double spenden;
+
+	/**
+	 * Das angestrebte Spendenziel
+	 */
 	private double spendenziel;
 
 	/**
@@ -26,44 +37,26 @@ class Aktion {
 		this.spendenziel = spendenziel;
 	}
 
-	/**
-	 * Das angestrebte Spendenziel
-	 */
 	public double getSpendenziel() {
 		return spendenziel;
 	}
 
-	/**
-	 * {@link #getSpendenziel()}
-	 */
 	public void setSpendenziel(double spendenziel) {
 		this.spendenziel = spendenziel;
 	}
 
-	/**
-	 * Die bisher gesammelten Spenden
-	 */
 	public double getSpenden() {
 		return spenden;
 	}
 
-	/**
-	 * {@link #getSpenden()}
-	 */
 	public void setSpenden(double spenden) {
 		this.spenden = spenden;
 	}
 
-	/**
-	 * Der Name der Aktion
-	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
-	 * {@link #getName()}
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}

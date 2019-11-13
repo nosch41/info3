@@ -4,10 +4,26 @@ package GloCiNo;
  * Diese Klasse enthält ein Konto, das mit einer bestimmten Spendenaktion assoziiert ist.
  */
 class Konto {
+	/**
+	 * Die Bankleitzahl des Kontos
+	 */
 	private String blz;
+
+	/**
+	 * Die Kontonummer
+	 */
 	private String kontoNr;
+
+	/**
+	 * Der Name des Kontoinhabers
+	 */
 	private String name;
+
+	/**
+	 * Die Bank des Kontos
+	 */
 	private String bank;
+
 	//private Aktion aktion;
 	//private Spende spende;
 	//later we will create a method that takes spende and forward it to aktion without saving it in konto class
@@ -20,58 +36,35 @@ class Konto {
 	}
 
 	//getters and setters for variables
-	/**
-	 * Die Bankleitzahl des Kontos
-	 */
+
 	public String getBlz() {
 		return blz;
 	}
 
-	/**
-	 * {@link #getBlz()}
-	 */
 	public void setBlz(String blz) {
 		this.blz = blz;
 	}
 
-	/**
-	 * Die Kontonummer
-	 */
 	public String getKontoNr() {
 		return kontoNr;
 	}
 
-	/**
-	 * {@link #getKontoNr()}
-	 */
 	public void setKontoNr(String kontoNr) {
 		this.kontoNr = kontoNr;
 	}
 
-	/**
-	 * Der Name des Kontoinhabers
-	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
-	 * {@link #getName()}
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
-	 * Die Bank des Kontos
-	 */
 	public String getBank() {
 		return bank;
 	}
 
-	/**
-	 * {@link #getBank()}
-	 */
 	public void setBank(String bank) {
 			this.bank = bank;
 		}

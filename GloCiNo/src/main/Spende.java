@@ -4,10 +4,30 @@ package GloCiNo;
  * Diese Klasse enthält eine von einem Spender getätigten Spende, dessen Status sich verfolgen lässt.
  */
 class Spende {
+	/**
+	 * Der Spendenbetrag
+	 */
 	private double betrag;
+
+	/**
+	 * Ob eine Quittung erwünscht ist
+	 */
 	private boolean quittung;
+
+	/**
+	 * Der (Firmen-)Name des Spenders
+	 */
 	private String spenderName;
-	Status status = Status.IN_BEARBEITUNG;
+
+	/**
+	 * Der Status der getätigten Spende
+	 */
+	private GloCiNo.Status status = GloCiNo.Status.IN_BEARBEITUNG;
+
+	/**
+	 * Art, auf die gezahlt werden soll
+	 */
+	private Zahlweise zahlweise;
 
 	/**
 	 * Eine Spende erstellen, in der explizit eine Quittung gewünscht/abgelehnt wird
@@ -26,51 +46,30 @@ class Spende {
 		this.spenderName = spenderName;
 	}
 
-	/**
-	 * Der Spendenbetrag
-	 */
 	public double getBetrag() {
 		return betrag;
 	}
 
-	/**
-	 * {@link #getBetrag()}
-	 */
 	public void setBetrag(double betrag) {
 		this.betrag = betrag;
 	}
 
-	/**
-	 * Ob eine Quittung erwünscht ist
-	 */
 	public boolean getQuittung() {
 		return quittung;
 	}
 
-	/**
-	 * {@link #getQuittung()}
-	 */
 	public void setQuittung(boolean quittung) {
 		this.quittung = quittung;
 	}
 
-	/**
-	 * Das (Firmen-)Name des Spenders
-	 */
 	public String getSpenderName() {
 		return spenderName;
 	}
 
-	/**
-	 * {@link #getSpenderName()}
-	 */
 	public void setSpenderName(String spenderName) {
 		this.spenderName = spenderName;
 	}
 
-	/**
-	 * Der Status der getätigten Spende
-	 */
 	public Status getStatus() {
 		return status;
 	}

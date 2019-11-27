@@ -12,7 +12,7 @@ public class ToolTipManager3  {
 	private ToolTipManager3() {
 		System.out.println("Neues Singleton erzeugt.");
 	}
-	public static ToolTipManager3 getInstance() {
+	public static synchronized ToolTipManager3 getInstance() {
 		if(instance==null) {
 			instance=new ToolTipManager3();
 		}
